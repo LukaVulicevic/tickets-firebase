@@ -1,0 +1,68 @@
+.form-container {
+    max-width: 1200px;
+    margin: 1em auto;
+}
+
+.ticket-form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: 2em auto;
+}
+
+.ticket-form-input,
+.ticket-form-select,
+.ticket-form-text-area {
+    margin: 1em 0;
+    padding: 1em;
+    border-radius: 10px;
+    border: none;
+    text-align: center;
+    color: #303030;
+    font-family: inherit;
+    font-weight: bold;
+}
+
+.ticket-form-input:focus,
+.ticket-form-select:focus,
+.ticket-form-text-area:focus {
+    box-shadow: 0 0 1pt 2pt #d1cf79;
+    outline: none;
+}
+
+.ticket-form-input::placeholder {
+    color: #303030;
+}
+
+.ticket-form-text-area {
+    text-align: left;
+    min-height: 200px;
+    text-transform: none;
+}
+
+.ticket-form-btn {
+    background-color: #f2ee46;
+    text-decoration: none;
+    text-align: center;
+    color: #303030;
+    border: none;
+    padding: 1em 3em;
+    width: 75%;
+    border-radius: 10px;
+    margin: 1em auto;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ticket-form-btn:hover,
+.ticket-form-btn:focus {
+    background-color: #d6d100;
+    cursor: pointer;
+}
+
+@media (min-width: 1000px) {
+    .ticket-form{
+        width: 700px;
+    }
+    
+}

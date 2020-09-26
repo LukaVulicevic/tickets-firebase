@@ -1,0 +1,35 @@
+.pagination {
+    margin: 2em auto;
+}
+
+.inner {
+    width: 50%;
+    display: flex;
+    margin: auto;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page-counter-btn {
+    padding: 1em;
+    border: none;
+    border-radius: 10px;
+    background-color: #f2ee46;
+    color: #303030;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.page-counter-btn:hover{
+    cursor: pointer;
+}
+
+.page-counter-btn:focus {
+    outline: none;
+}
+
+.page-counter-btn:disabled {
+    background-color: #d1cf79;
+    cursor: default;
+}

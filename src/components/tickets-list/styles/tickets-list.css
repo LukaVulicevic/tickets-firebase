@@ -1,0 +1,83 @@
+.tickets-list {
+    display: flex;
+    flex-direction: column;
+    margin: 2em auto;
+    justify-content: space-evenly;
+    min-height: 70vh;
+}
+
+.ticket {
+    background-color: #303030;
+    box-sizing: border-box;
+    width: 90%;
+    max-height: 350px;
+    color: white;
+    padding: 1em;
+    margin: 1em auto;
+    display: grid;
+    align-items: center;
+    text-align: center;
+    border-radius: 10px;
+    grid-template-rows: repeat(4, 25%);
+    grid-template-areas: 
+                        "title title title edit"
+                        "name name date date"
+                        "category category urgency urgency"
+                        "desc desc desc desc";
+}
+
+.ticket-title {
+    grid-area: title;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.ticket-edit {
+    grid-area: edit;
+    text-decoration: none;
+    color: #d1cf79;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.ticket-edit:hover {
+    color: #c9c749;
+}
+
+.ticket-edit h2 {
+    margin-top: 0;
+    font-size: 1.275rem;
+    font-weight: normal;
+}
+
+.ticket-user {
+    grid-area: name;
+}
+
+.ticket-date {
+    grid-area: date;
+}
+
+.ticket-category {
+    grid-area: category;
+}
+
+.ticket-urgency {
+    grid-area: urgency;
+}
+
+.ticket-desc {
+    grid-area: desc;
+    border-top: 1px solid #c9c749;
+    padding: 1em;
+}
+
+@media (min-width: 1000px) {
+    .container {
+        flex-flow: row wrap;
+    }
+
+    .ticket {
+        width: 45%;
+    }
+}
